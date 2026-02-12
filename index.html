@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Button Website</title>
+    <meta charset="UTF-8">
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+    <h1>CI/CD Demo</h1>
+
+    <button onclick="showMessage()" 
+            style="padding:15px 30px; font-size:18px;">
+        Click Me
+    </button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = 
+                "🚀 Deployed via CI/CD Pipeline!";
+        }
+    </script>
+
+</body>
+</html>
