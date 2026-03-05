@@ -1,45 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>My Button Website</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <style>
-        .message-container{
-            max-width:600px;
-            margin:auto;
-            text-align:left;
-        }
+      .message-container {
+        max-width: 600px;
+        margin: auto;
+        text-align: left;
+      }
 
-        ol{
-            padding-left:40px;
-        }
+      ol {
+        padding-left: 40px;
+      }
     </style>
     <style>
-#message{
-    max-width:600px;
-    margin:20px auto;
-    text-align:left;
-}
+      #message {
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: left;
+      }
 
-#message ol{
-    padding-left:25px;
-}
-</style>
-</head>
-<body style="text-align:center; margin-top:100px; font-family:Arial; color: blue;">
-
+      #message ol {
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial;
+      color: blue;
+      background-color: blue;
+    "
+  >
     <h1>CI/CD Demo - Updated!</h1>
 
-    <button onclick="showMessage()" 
-            style="padding:15px 30px; font-size:18px; color: blue;">
-        Useeeee Me!!
+    <button onclick="showMessage()" style="padding: 15px 30px; font-size: 18px; color: blue">
+      Useeeee Me!!
     </button>
 
     <p id="message"></p>
-    
-<script>
-function showMessage() {
-    document.getElementById("message").innerHTML = `
+
+    <script>
+      function showMessage() {
+        document.getElementById('message').innerHTML = `
         <h3>Deployed via CI/CD Pipeline!</h3>
         <p>Steps to manipulate this webpage:</p>
         <ol>
@@ -52,7 +58,7 @@ function showMessage() {
             <li>Watch the CI/CD pipeline deploy your changes to the website</li>
         </ol>
     `;
-}
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
